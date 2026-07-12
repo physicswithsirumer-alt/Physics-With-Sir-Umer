@@ -167,6 +167,12 @@
   .topic-card .idx{color:var(--gold-dim);font-family:var(--display);font-size:15px;}
   .topic-card h3{font-size:23px;color:var(--cream);margin-top:10px;}
   .topic-card p{color:var(--muted);font-size:16px;margin-top:8px;}
+  .topic-links{display:flex;gap:18px;margin-top:16px;padding-top:14px;border-top:1px solid var(--hair);}
+  .topic-links a{
+    font-variant:small-caps;letter-spacing:0.06em;font-size:15px;
+    color:var(--gold-bright);border-bottom:1px solid var(--gold-dim);
+  }
+  .topic-links a:hover{color:var(--gold);border-color:var(--gold);}
 
   /* ---------- COURSES ---------- */
   .courses-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:820px;}
@@ -191,7 +197,7 @@
     display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
     background:var(--hair);border:1px solid var(--hair);
   }
-  .res-card{background:var(--ink);padding:30px 24px;text-align:center;transition:background .2s ease;}
+  .res-card{display:block;background:var(--ink);padding:30px 24px;text-align:center;transition:background .2s ease;}
   .res-card:hover{background:var(--panel-2);}
   .res-card .glyph{font-family:var(--display);font-size:30px;color:var(--gold);}
   .res-card h4{font-size:19px;margin-top:12px;color:var(--cream);}
@@ -300,7 +306,6 @@
       <div class="brand-name">Physics with <em>Sir Umer</em></div>
     </div>
     <div class="nav-links">
-      <a href="#syllabus">Syllabus</a>
       <a href="#courses">Courses</a>
       <a href="#resources">Free Resources</a>
       <a href="#contact">Contact</a>
@@ -361,7 +366,7 @@
   </div>
 </section>
 
-<section id="syllabus">
+<section id="syllabus" style="display:none;"> <!-- Syllabus Map disabled per request — Free Resources section is now the active way to browse topics -->
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">The 5054 & 0625 Syllabus, Mapped</div>
@@ -369,34 +374,34 @@
       <p>A full walkthrough of the O-Level Physics syllabus, from measurement to radioactivity, taught with past-paper technique built in.</p>
     </div>
     <div class="syllabus-grid reveal">
-      <div class="topic-card"><div class="idx">01</div><h3>Physical Quantities &amp; Measurement Techniques</h3><p>Units, precision, and instruments used correctly under exam conditions.</p></div>
-      <div class="topic-card"><div class="idx">02</div><h3>Motion (Kinematics)</h3><p>Speed, velocity, acceleration, and reading motion graphs without hesitation.</p></div>
-      <div class="topic-card"><div class="idx">03</div><h3>Mass, Weight &amp; Density</h3><p>The distinctions examiners repeatedly test &mdash; made permanent.</p></div>
-      <div class="topic-card"><div class="idx">04</div><h3>Forces: Dynamics</h3><p>Newton's Laws applied to real O-Level scenarios, not just definitions.</p></div>
-      <div class="topic-card"><div class="idx">05</div><h3>Forces: Turning Effect of Forces</h3><p>Moments, equilibrium, and the centre of mass, worked through past papers.</p></div>
-      <div class="topic-card"><div class="idx">06</div><h3>Forces: Elastic Deformation</h3><p>Hooke's Law and the limit of proportionality, explained with graphs.</p></div>
-      <div class="topic-card"><div class="idx">07</div><h3>Momentum</h3><p>Conservation principles applied to collisions and explosions.</p></div>
-      <div class="topic-card"><div class="idx">08</div><h3>Energy, Work &amp; Power</h3><p>Efficiency calculations and energy resources, exam-ready.</p></div>
-      <div class="topic-card"><div class="idx">09</div><h3>Pressure</h3><p>Liquids, gases, and manometers explained with worked past-paper questions.</p></div>
-      <div class="topic-card"><div class="idx">10</div><h3>Kinetic Particle Model of Matter</h3><p>States of matter and particle behaviour, built from first principles.</p></div>
-      <div class="topic-card"><div class="idx">11</div><h3>Thermal Properties &amp; Temperature</h3><p>Specific heat capacity and latent heat, demystified.</p></div>
-      <div class="topic-card"><div class="idx">12</div><h3>Transfer of Thermal Energy</h3><p>Conduction, convection, and radiation, with everyday examples.</p></div>
-      <div class="topic-card"><div class="idx">13</div><h3>General Properties of Waves</h3><p>Wave terms and behaviour, visualized rather than memorized.</p></div>
-      <div class="topic-card"><div class="idx">14</div><h3>Light</h3><p>Reflection, refraction, and lenses, with ray-diagram technique.</p></div>
-      <div class="topic-card"><div class="idx">15</div><h3>Electromagnetic Spectrum</h3><p>Uses and dangers of each region, in examiner-expected wording.</p></div>
-      <div class="topic-card"><div class="idx">16</div><h3>Sound</h3><p>Sound waves, ultrasound, and echo calculations.</p></div>
-      <div class="topic-card"><div class="idx">17</div><h3>Simple Magnetism &amp; Magnetic Fields</h3><p>Field patterns and magnetic properties, made intuitive.</p></div>
-      <div class="topic-card"><div class="idx">18</div><h3>Electrical Quantities: Electric Charge</h3><p>Charging, static electricity, and the field concept.</p></div>
-      <div class="topic-card"><div class="idx">19</div><h3>Electrical Quantities: Electric Current</h3><p>Current, e.m.f., and resistance, built from first principles.</p></div>
-      <div class="topic-card"><div class="idx">20</div><h3>Electric Circuits</h3><p>Series and parallel circuits, solved step by step.</p></div>
-      <div class="topic-card"><div class="idx">21</div><h3>Practical Electricity</h3><p>Wiring, fuses, and safety, in real household context.</p></div>
-      <div class="topic-card"><div class="idx">22</div><h3>Electromagnetic Effects: Electromagnetism</h3><p>The motor effect and force on a current-carrying conductor.</p></div>
-      <div class="topic-card"><div class="idx">23</div><h3>Electromagnetic Effects: Electromagnetic Induction</h3><p>Generators, transformers, and induction, worked through diagrams.</p></div>
-      <div class="topic-card"><div class="idx">24</div><h3>Uses of an Oscilloscope</h3><p>Reading traces and calculating frequency, step by step.</p></div>
-      <div class="topic-card"><div class="idx">25</div><h3>The Nuclear Model of an Atom</h3><p>Atomic structure and the evidence behind the model.</p></div>
-      <div class="topic-card"><div class="idx">26</div><h3>Radioactivity</h3><p>Decay, half-life, and safety, in precise examiner wording.</p></div>
-      <div class="topic-card"><div class="idx">27</div><h3>The Earth and the Solar System</h3><p>Orbits, seasons, and planetary motion, made concrete.</p></div>
-      <div class="topic-card"><div class="idx">28</div><h3>Stars and the Universe</h3><p>Stellar evolution and the scale of the universe.</p></div>
+      <div class="topic-card"><div class="idx">01</div><h3>Physical Quantities &amp; Measurement Techniques</h3><p>Units, precision, and instruments used correctly under exam conditions.</p><div class="topic-links"><a href="notes/01-physical-quantities-and-measurement.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/01-physical-quantities-and-measurement.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">02</div><h3>Motion (Kinematics)</h3><p>Speed, velocity, acceleration, and reading motion graphs without hesitation.</p><div class="topic-links"><a href="notes/02-motion-kinematics.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/02-motion-kinematics.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">03</div><h3>Mass, Weight &amp; Density</h3><p>The distinctions examiners repeatedly test &mdash; made permanent.</p><div class="topic-links"><a href="notes/03-mass-weight-density.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/03-mass-weight-density.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">04</div><h3>Forces: Dynamics</h3><p>Newton's Laws applied to real O-Level scenarios, not just definitions.</p><div class="topic-links"><a href="notes/04-forces-dynamics.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/04-forces-dynamics.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">05</div><h3>Forces: Turning Effect of Forces</h3><p>Moments, equilibrium, and the centre of mass, worked through past papers.</p><div class="topic-links"><a href="notes/05-forces-turning-effect.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/05-forces-turning-effect.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">06</div><h3>Forces: Elastic Deformation</h3><p>Hooke's Law and the limit of proportionality, explained with graphs.</p><div class="topic-links"><a href="notes/06-forces-elastic-deformation.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/06-forces-elastic-deformation.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">07</div><h3>Momentum</h3><p>Conservation principles applied to collisions and explosions.</p><div class="topic-links"><a href="notes/07-momentum.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/07-momentum.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">08</div><h3>Energy, Work &amp; Power</h3><p>Efficiency calculations and energy resources, exam-ready.</p><div class="topic-links"><a href="notes/08-energy-work-power.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/08-energy-work-power.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">09</div><h3>Pressure</h3><p>Liquids, gases, and manometers explained with worked past-paper questions.</p><div class="topic-links"><a href="notes/09-pressure.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/09-pressure.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">10</div><h3>Kinetic Particle Model of Matter</h3><p>States of matter and particle behaviour, built from first principles.</p><div class="topic-links"><a href="notes/10-kinetic-particle-model.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/10-kinetic-particle-model.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">11</div><h3>Thermal Properties &amp; Temperature</h3><p>Specific heat capacity and latent heat, demystified.</p><div class="topic-links"><a href="notes/11-thermal-properties-temperature.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/11-thermal-properties-temperature.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">12</div><h3>Transfer of Thermal Energy</h3><p>Conduction, convection, and radiation, with everyday examples.</p><div class="topic-links"><a href="notes/12-transfer-of-thermal-energy.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/12-transfer-of-thermal-energy.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">13</div><h3>General Properties of Waves</h3><p>Wave terms and behaviour, visualized rather than memorized.</p><div class="topic-links"><a href="notes/13-general-properties-of-waves.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/13-general-properties-of-waves.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">14</div><h3>Light</h3><p>Reflection, refraction, and lenses, with ray-diagram technique.</p><div class="topic-links"><a href="notes/14-light.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/14-light.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">15</div><h3>Electromagnetic Spectrum</h3><p>Uses and dangers of each region, in examiner-expected wording.</p><div class="topic-links"><a href="notes/15-electromagnetic-spectrum.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/15-electromagnetic-spectrum.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">16</div><h3>Sound</h3><p>Sound waves, ultrasound, and echo calculations.</p><div class="topic-links"><a href="notes/16-sound.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/16-sound.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">17</div><h3>Simple Magnetism &amp; Magnetic Fields</h3><p>Field patterns and magnetic properties, made intuitive.</p><div class="topic-links"><a href="notes/17-simple-magnetism-magnetic-fields.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/17-simple-magnetism-magnetic-fields.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">18</div><h3>Electrical Quantities: Electric Charge</h3><p>Charging, static electricity, and the field concept.</p><div class="topic-links"><a href="notes/18-electric-charge.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/18-electric-charge.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">19</div><h3>Electrical Quantities: Electric Current</h3><p>Current, e.m.f., and resistance, built from first principles.</p><div class="topic-links"><a href="notes/19-electric-current.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/19-electric-current.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">20</div><h3>Electric Circuits</h3><p>Series and parallel circuits, solved step by step.</p><div class="topic-links"><a href="notes/20-electric-circuits.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/20-electric-circuits.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">21</div><h3>Practical Electricity</h3><p>Wiring, fuses, and safety, in real household context.</p><div class="topic-links"><a href="notes/21-practical-electricity.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/21-practical-electricity.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">22</div><h3>Electromagnetic Effects: Electromagnetism</h3><p>The motor effect and force on a current-carrying conductor.</p><div class="topic-links"><a href="notes/22-electromagnetism.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/22-electromagnetism.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">23</div><h3>Electromagnetic Effects: Electromagnetic Induction</h3><p>Generators, transformers, and induction, worked through diagrams.</p><div class="topic-links"><a href="notes/23-electromagnetic-induction.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/23-electromagnetic-induction.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">24</div><h3>Uses of an Oscilloscope</h3><p>Reading traces and calculating frequency, step by step.</p><div class="topic-links"><a href="notes/24-oscilloscope.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/24-oscilloscope.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">25</div><h3>The Nuclear Model of an Atom</h3><p>Atomic structure and the evidence behind the model.</p><div class="topic-links"><a href="notes/25-nuclear-model-of-atom.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/25-nuclear-model-of-atom.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">26</div><h3>Radioactivity</h3><p>Decay, half-life, and safety, in precise examiner wording.</p><div class="topic-links"><a href="notes/26-radioactivity.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/26-radioactivity.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">27</div><h3>The Earth and the Solar System</h3><p>Orbits, seasons, and planetary motion, made concrete.</p><div class="topic-links"><a href="notes/27-earth-and-solar-system.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/27-earth-and-solar-system.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
+      <div class="topic-card"><div class="idx">28</div><h3>Stars and the Universe</h3><p>Stellar evolution and the scale of the universe.</p><div class="topic-links"><a href="notes/28-stars-and-universe.pdf" target="_blank" rel="noopener">Notes</a><a href="papers/28-stars-and-universe.pdf" target="_blank" rel="noopener">Past Papers</a></div></div>
     </div>
   </div>
 </section>
@@ -433,10 +438,10 @@
       <p>Notes, formula sheets, and topical past papers for O-Level and IGCSE Physics 5054 & 0625.</p>
     </div>
     <div class="resources reveal">
-      <div class="res-card"><div class="glyph">&sect;</div><h4>Notes</h4><p>Topic-wise, exam-focused summaries following the syllabus sequence above.</p></div>
-      <div class="res-card"><div class="glyph">&#9679;</div><h4>Topical Past Papers</h4><p>Sorted by chapter, with mark schemes.</p></div>
-      <div class="res-card"><div class="glyph">&Dagger;</div><h4>Definition &amp; Laws</h4><p>Precise wording examiners look for.</p></div>
-      <div class="res-card"><div class="glyph">&fnof;</div><h4>Formula Sheet</h4><p>Every equation you'll need, in one page.</p></div>
+      <a class="res-card" href="notes.html"><div class="glyph">&sect;</div><h4>Notes</h4><p>Topic-wise, exam-focused summaries following the syllabus sequence.</p></a>
+      <a class="res-card" href="papers.html"><div class="glyph">&#9679;</div><h4>Topical Past Papers</h4><p>Sorted by chapter, with mark schemes.</p></a>
+      <a class="res-card" href="definition-and-laws.pdf" target="_blank" rel="noopener"><div class="glyph">&Dagger;</div><h4>Definition &amp; Laws</h4><p>Precise wording examiners look for.</p></a>
+      <a class="res-card" href="formula-sheet.pdf" target="_blank" rel="noopener"><div class="glyph">&fnof;</div><h4>Formula Sheet</h4><p>Every equation you'll need, in one page.</p></a>
     </div>
   </div>
 </section>
@@ -451,6 +456,7 @@
       <input type="hidden" name="_subject" value="New Registration - Physics with Sir Umer">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://physicswithsirumer-alt.github.io/Physics-With-Sir-Umer/?registered=true#enroll">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="field">
         <label for="f-email">Email <span class="req">*</span></label>
@@ -494,7 +500,7 @@
       <div>
         <h4>Syllabus</h4>
         <ul>
-          <li><a href="#syllabus">Topics Covered</a></li>
+          <li><a href="notes.html">Topics Covered</a></li>
           <li><a href="#courses">Courses</a></li>
         </ul>
       </div>
@@ -549,9 +555,16 @@
       const submitBtn = regForm.querySelector('button[type="submit"]');
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending...';
-      // No preventDefault here — the form submits natively to FormSubmit.
-      // FormSubmit will redirect to its own confirmation/thank-you page after sending.
+      // No preventDefault here — the form submits natively to FormSubmit,
+      // which then redirects back to this page (see the _next field above)
+      // with ?registered=true, which the code below detects.
     });
+  }
+
+  if(new URLSearchParams(window.location.search).get('registered') === 'true'){
+    regForm.hidden = true;
+    formSuccess.hidden = false;
+    formSuccess.scrollIntoView({behavior:'smooth', block:'center'});
   }
 </script>
 
